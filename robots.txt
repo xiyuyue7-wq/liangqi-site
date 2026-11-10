@@ -1,0 +1,26 @@
+# 福州良奇生态农业有限公司 · https://fzliangqi.com
+# 本站为公开的企业信息页，欢迎搜索引擎与 AI 检索类爬虫抓取。
+
+User-agent: *
+Allow: /
+
+# AI 检索类爬虫（显式放行，确认本站允许被用于 AI 问答检索）
+User-agent: Bytespider
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://fzliangqi.com/sitemap.xml
