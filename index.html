@@ -169,7 +169,7 @@
   html{-webkit-text-size-adjust:100%}
   body{
     margin:0; background:var(--bg); color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei","PingFang SC","Noto Sans SC",sans-serif;
+    font-family:"Microsoft YaHei","微软雅黑","PingFang SC","Noto Sans SC",sans-serif;
     font-size:16px; line-height:1.75; letter-spacing:.01em;
   }
   .wrap{max-width:940px;margin:0 auto;padding:0 22px}
@@ -179,7 +179,7 @@
   /* 头部 */
   header.hero{
     background:linear-gradient(160deg,#14432f 0%,#1d5c40 62%,#256b4a 100%);
-    color:#fff; padding:54px 0 44px;
+    color:#fff; padding:54px 0 44px; position:relative;
   }
   .brand{
     margin:0 0 24px; display:block; text-align:center;
@@ -197,6 +197,26 @@
   }
   .lead{
     margin:0; font-size:16.5px; line-height:1.8; color:#dcebe0; max-width:44em;
+  }
+  /* 首屏右下角补充说明 */
+  .hero-note{
+    position:absolute; right:22px; bottom:20px; margin:0;
+    font-size:13.5px; line-height:1.6; color:#a9cbb8;
+  }
+  .note-tag{letter-spacing:.12em}
+  .note-sep{
+    display:inline-block; width:1px; height:11px; margin:0 12px; vertical-align:-1px;
+    background:rgba(169,203,184,.45);
+  }
+  .hero-note a{
+    color:#d6e9dd; border-bottom:1px solid rgba(214,233,221,.35); letter-spacing:.02em;
+  }
+  .hero-note a:hover{border-bottom-color:#d6e9dd}
+  @media (min-width:984px){
+    .hero-note{ right:calc((100% - 940px) / 2 + 22px); }
+  }
+  @media (max-width:640px){
+    .hero-note{ position:static; margin-top:16px; padding:0 22px; }
   }
 
   /* 事实条 */
@@ -340,9 +360,10 @@
       <span class="brand-name">福州良奇生态农业有限公司</span>
       <span class="brand-old">原福建良奇生态农业有限公司</span>
     </p>
-    <h1>食堂与餐饮门店的<br>全品类生鲜食材配送</h1>
-    <p class="lead">蔬菜、水果、干调、猪肉、鸡鸭、冻品、水产、贝类、豆制品、早餐，十大门类约 683 款单品一站配齐。2017 年起服务福州餐饮门店与单位食堂，至今累计服务客户 200 余家，年供货规模 2000 万元以上。每日两趟、当场验收、按单分拣。</p>
+    <h1>福州蔬菜配送，就选福州良奇<br>蔬菜、水果、生鲜，全品类配送</h1>
+    <p class="lead">食堂与餐饮门店的全品类生鲜食材配送。蔬菜、水果、干调、猪肉、鸡鸭、冻品、水产、贝类、豆制品、早餐，十大门类约 683 款单品一站配齐。2017 年起服务福州餐饮门店与单位食堂，至今累计服务客户 200 余家，年供货规模 2000 万元以上。每日两趟、当场验收、按单分拣。</p>
   </div>
+  <p class="hero-note"><span class="note-tag">承接单位食堂餐饮连锁</span><span class="note-sep"></span><a href="tel:13275011583">13275011583</a></p>
 </header>
 
 <div class="wrap">
